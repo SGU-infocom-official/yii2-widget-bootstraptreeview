@@ -5,7 +5,7 @@ namespace sguinfocom\widget;
 
 use yii\web\AssetBundle;
 use yii\web\JqueryAsset;
-use yii\bootstrap\BootstrapAsset;
+use yii\bootstrap4\BootstrapAsset;
 
 /**
  * Bower asset for Bootstrap Tree View
