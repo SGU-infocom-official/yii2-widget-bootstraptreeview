@@ -93,12 +93,12 @@ $.widget("sguinfocom.TreeFilterInput", {
     _showSearchIcon: function () {
         var t = this;
         console.debug("show search");
-        t.clearEl.removeClass("glyphicon-remove").addClass("glyphicon-search");
+        t.clearEl.removeClass("fa-times").addClass("fa-search");
     },
     _hideSearchIcon: function () {
         var t = this;
         console.debug("hide search");
-        t.clearEl.addClass("glyphicon-remove").removeClass("glyphicon-search");
+        t.clearEl.addClass("fa-times").removeClass("fa-search");
     },
     _expandAllParents: function (parentNode) {
         var t = this,

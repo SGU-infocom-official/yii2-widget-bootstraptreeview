@@ -38,7 +38,7 @@ class TreeFilterInput extends Widget
         Html::addCssClass($inputOptions, 'form-control');
         $inputOptions['autocomplete'] = 'off';
         $clearButtonOptions = ArrayHelper::merge([
-            'class' => 'close glyphicon glyphicon-search',
+            'class' => 'close fa fa-search',
             'title' => 'Clear search results',
         ], $this->clearButtonOptions);
 
