@@ -1,24 +1,43 @@
 {
-  "name": "execut/yii2-widget-bootstraptreeview",
-  "description": "Bootstrap Tree View widget wrapper for yii2",
-  "keywords": ["yii2", "extension", "tree", "input", "form", "bootstrap", "jquery", "plugin"],
-  "homepage": "https://github.com/execut/yii2-widget-bootstraptreeview",
-  "type": "yii2-extension",
-  "license": "Apache-2.0",
-  "authors": [
-    {
-      "name": "eXeCUT"
+    "name": "sgu-infocom-official/yii2-widget-bootstraptreeview",
+    "description": "Bootstrap Tree View widget wrapper for yii2",
+    "keywords": [
+        "yii2",
+        "extension",
+        "tree",
+        "input",
+        "form",
+        "bootstrap",
+        "jquery",
+        "plugin"
+    ],
+    "homepage": "https://github.com/SGU-infocom-official/yii2-widget-bootstraptreeview",
+    "type": "yii2-extension",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "sguinfocom",
+            "email": "t.sitnikov@infocom-s.ru",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4",
+        "yiisoft/yii2": "2.0.45",
+        "execut/yii2-base": "*",
+        "yiisoft/yii2-jui": "@dev",
+        "yiisoft/yii2-bootstrap4": "~2.0.6",
+        "bower-asset/patternfly-bootstrap-treeview": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "sguinfocom\\widget\\": ""
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "bower-asset-library": "vendor/bower-asset"
+        }
     }
-  ],
-  "minimum-stability": "stable",
-  "require": {
-    "execut/yii2-base": "*",
-    "yiisoft/yii2-jui": "@dev",
-    "bower-asset/patternfly-bootstrap-treeview": "@dev"
-  },
-  "autoload": {
-    "psr-4": {
-      "execut\\widget\\": ""
-    }
-  }
 }

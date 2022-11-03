@@ -1,26 +1,26 @@
 <?php
-namespace execut\widget;
+
+namespace sguinfocom\widget;
 
 
 use yii\web\AssetBundle;
+use yii\web\JqueryAsset;
+use yii\bootstrap\BootstrapAsset;
 
 /**
  * Bower asset for Bootstrap Tree View
  *
  * @author eXeCUT
  */
-class TreeViewBowerAsset extends AssetBundle {
+class TreeViewBowerAsset extends AssetBundle
+{
     public $sourcePath = '@bower/patternfly-bootstrap-treeview/dist';
-    public $js = [
-        'bootstrap-treeview.js',
-    ];
+    public $js = ['bootstrap-treeview.js'];
 
-    public $css = [
-        'bootstrap-treeview.min.css',
-    ];
+    public $css = ['bootstrap-treeview.min.css'];
 
     public $depends = [
-        'yii\web\JqueryAsset',
-        'yii\bootstrap\BootstrapAsset',
+        JqueryAsset::class,
+        BootstrapAsset::class,
     ];
 }

@@ -13,20 +13,20 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-$ php composer.phar require execut/yii2-widget-bootstraptreeview "dev-master"
+$ composer require sgu-infocom-official/yii2-widget-bootstraptreeview "dev-master"
 ```
 
 or add
 
 ```
-"execut/yii2-widget-bootstraptreeview": "dev-master"
+"sgu-infocom-official/yii2-widget-bootstraptreeview": "dev-master"
 ```
 
 to the ```require``` section of your `composer.json` file.
 
 ## Simple example
 ```php
-use execut\widget\TreeView;
+use sguinfocom\widget\TreeView;
 use yii\web\JsExpression;
 
 $data = [
@@ -87,7 +87,7 @@ echo $groupsContent;
 ```php
 use yii\widgets\Pjax;
 use yii\web\JsExpression;
-use execut\widget\TreeView;
+use sguinfocom\widget\TreeView;
 use yii\helpers\Url;
 Pjax::begin([
     'id' => 'pjax-container',

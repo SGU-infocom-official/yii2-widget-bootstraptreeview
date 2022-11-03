@@ -1,5 +1,6 @@
 <?php
-use execut\widget\TreeView;
+
+use sguinfocom\widget\TreeView;
 use yii\web\JsExpression;
 
 $data = [

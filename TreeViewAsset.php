@@ -1,14 +1,17 @@
 <?php
-namespace execut\widget;
-use execut\yii\web\AssetBundle;
+
+namespace sguinfocom\widget;
+
+use sguinfocom\yii\web\AssetBundle;
 
 /**
  * Custom styles
  *
  * @author eXeCUT
  */
-class TreeViewAsset extends AssetBundle {
+class TreeViewAsset extends AssetBundle
+{
     public $depends = [
-        'execut\widget\TreeViewBowerAsset',
+        TreeViewBowerAsset::class,
     ];
 }
