@@ -8,7 +8,7 @@
 
 namespace sguinfocom\widget;
 
-use sguinfocom\yii\jui\Widget;
+use execut\yii\jui\Widget;
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
 

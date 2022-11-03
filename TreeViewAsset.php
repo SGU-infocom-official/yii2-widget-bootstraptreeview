@@ -2,7 +2,7 @@
 
 namespace sguinfocom\widget;
 
-use sguinfocom\yii\web\AssetBundle;
+use execut\yii\web\AssetBundle;
 
 /**
  * Custom styles

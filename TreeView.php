@@ -2,7 +2,7 @@
 
 namespace sguinfocom\widget;
 
-use sguinfocom\yii\jui\Widget;
+use execut\yii\jui\Widget;
 use yii\base\Exception;
 use yii\helpers\Html;
 
@@ -107,7 +107,7 @@ class TreeView extends Widget
 
         $this->clientOptions['data'] = $this->data;
 
-        $this->registerWidget('treeview');
+        $this->registerWidget('bstreeview');
     }
 
     protected function renderSearchWidget()

@@ -8,7 +8,7 @@
 
 namespace sguinfocom\widget;
 
-use sguinfocom\yii\web\AssetBundle;
+use execut\yii\web\AssetBundle;
 use yii\jui\JuiAsset;
 
 class TreeFilterInputAsset extends AssetBundle
