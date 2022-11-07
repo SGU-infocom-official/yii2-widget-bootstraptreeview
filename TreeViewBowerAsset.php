@@ -14,10 +14,10 @@ use yii\bootstrap4\BootstrapAsset;
  */
 class TreeViewBowerAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/npm-asset/bstreeview';
-    public $js = ['dist/js/bstreeview.min.js'];
+    public $sourcePath = '@vendor/npm-asset/sgu-bootstrap-treeview/dist';
+    public $js = ['bootstrap-treeview.js'];
 
-    public $css = ['dist/css/bstreeview.min.css'];
+    public $css = ['bootstrap-treeview.min.css'];
 
     public $depends = [
         JqueryAsset::class,

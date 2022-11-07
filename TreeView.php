@@ -107,7 +107,7 @@ class TreeView extends Widget
 
         $this->clientOptions['data'] = $this->data;
 
-        $this->registerWidget('bstreeview');
+        $this->registerWidget('treeview');
     }
 
     protected function renderSearchWidget()

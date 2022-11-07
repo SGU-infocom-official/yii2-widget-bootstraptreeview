@@ -28,7 +28,7 @@
         "execut/yii2-base": "*",
         "yiisoft/yii2-jui": "@dev",
         "yiisoft/yii2-bootstrap4": "~2.0.6",
-        "bower-asset/patternfly-bootstrap-treeview": "@dev"
+        "npm-asset/sgu-bootstrap-treeview": "@dev"
     },
     "autoload": {
         "psr-4": {

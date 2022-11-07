@@ -53,8 +53,8 @@ $.widget("sguinfocom.TreeFilterInput", {
                 treeWidget.find(".list-group-item").css("display", "");
                 if (t.inputEl.val().length) {
                     t._hideSearchIcon();
-                    treeWidget.bstreeview("collapseAll");
-                    var findedNodes = treeWidget.bstreeview("search", [
+                    treeWidget.treeview("collapseAll");
+                    var findedNodes = treeWidget.treeview("search", [
                         t._escapeRegExp(t.inputEl.val()),
                         {
                             ignoreCase: true, // case insensitive
@@ -77,8 +77,8 @@ $.widget("sguinfocom.TreeFilterInput", {
                 } else {
                     t._showSearchIcon();
                     isKillKeyPress = false;
-                    treeWidget.bstreeview("clearSearch").bstreeview("collapseAll");
-                    var parentNode = treeWidget.bstreeview("getSelected");
+                    treeWidget.treeview("clearSearch").treeview("collapseAll");
+                    var parentNode = treeWidget.treeview("getSelected");
                     t._expandAllParents(parentNode);
                 }
             }, t.delayBetweenSearch);
@@ -112,7 +112,7 @@ $.widget("sguinfocom.TreeFilterInput", {
             parentNode.$el.css("display", "");
             var parents = [];
             while (
-                (parentNode = treeWidget.bstreeview("getParents", parentNode)) &&
+                (parentNode = treeWidget.treeview("getParents", parentNode)) &&
                 parentNode.length
             ) {
                 parentNode.map(function (node) {
@@ -126,7 +126,7 @@ $.widget("sguinfocom.TreeFilterInput", {
             }
 
             parents.reverse().map(function (parentNode) {
-                treeWidget.bstreeview("expandNode", parentNode);
+                treeWidget.treeview("expandNode", parentNode);
             });
         }
     },
